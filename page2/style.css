@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'proximanova';
+    src: url('../fonts/proximanova-regular-webfont.woff');
+}
+
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-clr: #3f82f2;
+    --subPrice-clr: #33aef4;
+}
+
+body {
+    font-family: 'proximanova', sans-serif;
+    padding: 1rem;
+    line-height: 1.5;
+}
+
+.lmTitle {
+    text-align: center;
+    margin: 2rem 0 3rem 0;
+    font-size: 3rem;
+}
+
+/* =======================Pricing-Cards========= */
+
+.lmPricing {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.lmPrice-item1 {
+    border: 1px solid #707070be;
+    border-radius: 10px;
+    padding: 1.5rem 5rem;
+    text-align: center;
+}
+
+.lmPrice-item2 {
+    border: 1px solid #70707088;
+    border-radius: 10px;
+    padding: 1.5rem 1.5rem;
+    text-align: center;
+}
+
+
+.lmPrice-title {
+    margin-bottom: 1rem;
+}
+
+.lmPrice-subtitle {
+    color: var(--primary-clr);
+    font-weight: bold;
+}
+
+.lmPrice-content {
+    display: flex;
+    gap: 5rem;
+    font-size: .9rem;
+    justify-content: space-around;
+}
+
+.lmPrice-content span {
+    color: var(--primary-clr);
+    padding: 0 6px;
+    border: 1px solid var(--primary-clr);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+
+/* ===============Pricing-blocks============= */
+
+.lmBlock-title {
+    color: var(--primary-clr);
+    margin: 3rem 0 1rem 0;
+    text-align: center;
+}
+
+.lmPricing-block {
+    max-width: 1150px;
+    margin: 1.5rem auto;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.267);
+}
+
+.lmBlock-subtitle {
+    color: white;
+    background-color: var(--primary-clr);
+    padding: 2rem;
+    border-radius: 10px 0 0 10px;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.lmBlock-subtitle::before {
+    content: "Free";
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    color: black;
+    padding: 0 2rem;
+    border-radius: 0 5px 5px 0;
+    font-size: .8rem;
+    background-color: white;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.267);
+}
+
+.lmBlock-subtitle2::before {
+    content: "Basic";
+}
+.lmBlock-subtitle3::before {
+    content: "Pro";
+}
+.lmBlock-subtitle4::before {
+    content: "Enterprise";
+}
+
+.lmBlock-subtitle h3 {
+    width: 150px;
+    text-align: center;
+}
+
+.lmBlock-price {
+    color: var(--primary-clr);
+    padding: 2rem;
+    display: grid;
+    place-items: center;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: auto;
+    width: 300px;
+}
+
+.lmBlock-price span {
+    color: #9c9c9c;
+    font-size: .8rem;
+}
+
+.lmBlock-price a {
+    background-color: var(--primary-clr);
+    color: white;
+    padding: .3rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+.lmBlock-price h3 small {
+    font-size: .89rem;
+    font-style: italic;
+    display: block;
+    color: var(--subPrice-clr);
+}
+
+.lmBlock-price h3 {
+    width: 170px;
+    font-size: 2rem;
+}
+
+.lmBlock-para {
+    padding: 1rem;
+    display: grid;
+    place-items: center;
+    text-align: left;
+}
+
+.lmBlock-para p {
+    border-left: 2px solid var(--primary-clr);
+    padding-left: 2rem;
+}
+
+@media screen and (max-width: 770px) {
+    .lmPricing {
+        flex-direction: column;
+    }
+
+    .lmPricing-block {
+       flex-direction: column;
+    }
+}
+
+
+
